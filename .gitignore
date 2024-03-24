@@ -8,3 +8,7 @@ __pycache__/selectpixel.cpython-310.pyc
 images/natural_modified.png
 images/yellowandblack.png
 images/shapes.png
+functions/__pycache__/cropper.cpython-310.pyc
+functions/__pycache__/filepaths.cpython-310.pyc
+functions/__pycache__/getcolor.cpython-310.pyc
+functions/__pycache__/selectfile.cpython-310.pyc
