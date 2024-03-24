@@ -1,5 +1,4 @@
 from PIL import Image
-import random
 
 def cropper(img, width, height, keepColor):
     matchingPixels = 0
@@ -11,7 +10,9 @@ def cropper(img, width, height, keepColor):
                 img.putpixel((x, y), (0, 0, 0, 0))
             else:
                 matchingPixels = matchingPixels + 1
+    trashedPixels = (width * height) - matchingPixels
     
     print(f"Matching Pixles: {matchingPixels}")
+    print(f"Trashed Pixels: {trashedPixels}")
 
     return img
