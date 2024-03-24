@@ -1,9 +1,9 @@
 import cv2
 from PIL import Image
-from selectfile import selectFile
-from cropper import cropper
-from filepaths import outputpath
-from getcolor import getcolor
+from functions.selectfile import selectFile
+from functions.cropper import cropper
+from functions.filepaths import outputpath
+from functions.getcolor import getcolor
 
 # Select file
 input_image_path = selectFile()
