@@ -1,7 +1,7 @@
 from PIL import Image
 import random
 
-def cropper(img, width, height, bgColor, keepColor):
+def cropper(img, width, height, keepColor):
 
     for x in range(0, width):
         for y in range(0, height):
