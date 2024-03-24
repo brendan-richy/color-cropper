@@ -58,3 +58,5 @@ if selected_pixel is not None:
     modified_img.save(output_image_path)
 else:
     print("No pixel selected. Exiting without processing.")
+
+# done
