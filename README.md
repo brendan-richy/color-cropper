@@ -4,6 +4,8 @@ This software is used to remove all pixels matching a pattern, and setting them 
 
 Specifically, when you search for images you may find an image you want to use, but the background isnt transparent and you don't have any way to remove an, for example all white background.
 
+![](images/example.png)
+
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
