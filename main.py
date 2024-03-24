@@ -3,6 +3,7 @@ from PIL import Image
 from selectfile import selectFile
 from cropper import cropper
 from filepaths import outputpath
+from getcolor import getcolor
 
 # Select file
 input_image_path = selectFile()
@@ -16,7 +17,7 @@ width, height = input_image.size
 
 
 
-selected_pixel = None
+
 
 def on_mouse_click(event, x, y, flags, param):
     global selected_pixel
@@ -26,6 +27,9 @@ def on_mouse_click(event, x, y, flags, param):
 # Load your image
 image = cv2.imread(input_image_path)
 
+
+selected_pixel = None
+# Have user select a color to keep
 if image is None:
     print("Error: Image not loaded. Please check the file path.")
 else:
@@ -39,8 +43,13 @@ else:
 
     cv2.destroyAllWindows()
 
+# Remove all colors that are not the keep color from the image, and save it.
 if selected_pixel is not None:
-    keepColor = input_image.getpixel(selected_pixel)
+
+    keepColor = getcolor(input_image, selected_pixel)
+    
+    # keepColor = input_image.getpixel(selected_pixel)
+ 
     print("Selected Pixel:", selected_pixel)
     print("Keep Color:", keepColor)
 
